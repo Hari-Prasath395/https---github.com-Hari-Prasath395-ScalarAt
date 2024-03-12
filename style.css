@@ -16,7 +16,7 @@
 
 
 .text-secondary{
-  color: #55BA53;
+  color: #4763a8;
 }
 
 .text-center{
@@ -124,7 +124,7 @@
 }
 
 .navbar-below.sticky{
-  padding: 15px 95px;
+  padding: 1px 37px;
   background: white;
   border-bottom: 1px solid #0a2940;
   color: #0a2940;
@@ -222,13 +222,13 @@
 
 .showcase .showcase-content{
   max-width: 850px;
-  margin-top: 15%;
-  padding: 0 95px;
+  margin-top: 4.8%;
+  padding: 155px 46px;
 
 }
 
 .showcase .showcase-content h1{
-  color: #55BA53;
+  color: #ffffff;
   font-size: 60px;
   margin: 15px 0;
   line-height: 1.1;
@@ -243,7 +243,7 @@
 }
 
 .showcase .showcase-content .btn-left{
-  background: linear-gradient(to right,#0a3609,#55BA53);
+  background: linear-gradient(to right,#002a53,#000f19);
 }
 
 .showcase .showcase-content .btn-right{
@@ -270,7 +270,7 @@
 }
 
 #services .items .item h3{
-  color: #55BA53;
+  color: #002a53;
   font-size: 16px;
   margin: 5px;
 }
@@ -285,7 +285,7 @@
 }
 
 #services .items .item:hover i{
-  color: #55BA53;
+  color: #536daf;
   
 }
 
@@ -329,17 +329,17 @@
 
 #goal .goal-text a{
   color: #f4f4f4;
-  background: #55BA53;
+  background: #536daf;
   text-decoration: none;
   font-size: 12px;
-  border: 1px solid #55BA53;
+  border: 1px solid #536daf;
   border-radius: 25px;
   padding: 3px 10px;
   transition: 0.5s ease;
 }
 
 #goal .goal-text a:hover{
-  color: #55BA53;
+  color: #ffffff;
   background: #0a2940;
 }
 
@@ -360,7 +360,7 @@
 #goal .goal-text .contents .content h3{
   font-size: 16px;
   padding-bottom: 5px;
-  color: #55BA53;
+  color: #4763a8;
 }
 
 #goal .goal-text .contents .content p{
@@ -368,7 +368,7 @@
 }
 
 #goal .goal-text .contents .content i{
-  color: #55BA53;
+  color: #ffffff;
   padding: 3px;
   background: #0a2940;
   align-self: flex-start;
@@ -528,7 +528,7 @@
 #teams .wrapper .card .card-body h4{
   font-size: 14px;
   font-weight: 600;
-  color: #55BA53;
+  color: #0a2940;
   margin-top: 0px;
 }
 
@@ -564,7 +564,7 @@
   margin-bottom: 20px;
 }
 .services-header span {
-  color: #55ba53;
+  color: #4763a8;
 }
 
 /* Container styles */
@@ -675,7 +675,7 @@ button[type="submit"]:hover {
 .contact-info i {
   margin-right: 15px;
   font-size: 30px;
-  color: #55ba53;
+  color: #233f83;
 }
 
 /* Center text */
@@ -737,6 +737,7 @@ td {
   background-color: #aba3a3; /* Change to your preferred background color */
   color: #fff; /* Change to your preferred text color */
   padding: 20px; /* Adjust padding as needed */
+  margin-bottom: -49px;
 }
 
 /* Footer content styles */
