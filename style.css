@@ -142,6 +142,10 @@
 
 
 
+
+
+
+
 /*navbar below search bar*/
 
 .navbar-below .search-form {
@@ -275,12 +279,14 @@
   width: 600px;
   height: 380px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 #goal .goal-img img {
   width: auto;
   height: 100%;
   object-fit: cover;
+  
 }
 
 #goal .goal-text {
@@ -289,12 +295,14 @@
 
 #goal .goal-text a {
   color: #f4f4f4;
-  background: #536daf;
+  background:linear-gradient(#203772,#2b4884);
   text-decoration: none;
-  font-size: 12px;
+  font-size: bold;
+  position: relative;
+  margin-left: 200px;
   border: 1px solid #536daf;
   border-radius: 25px;
-  padding: 3px 10px;
+  padding: 8px 10px;
   transition: 0.5s ease;
 }
 
@@ -335,176 +343,8 @@
   margin-right: 5px;
 }
 
-/*Portfolio section styling*/
-
-#portfolio {
-  background: #0a2940;
-}
-.portfolio h3 {
-  color: #95a2bb;
-  font-size: 14px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.portfolio h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #95a2bb;
-  margin-bottom: 20px;
-}
-
-.portfolio h2 span {
-  font-weight: 500;
-}
-
-.portfolio p {
-  color: #95a2bb;
-  line-height: 1.6;
-  margin-bottom: 100px;
-}
-
-.owl-carousel .item img {
-  display: block;
-  width: 700px;
-  height: 300px;
-  border: 2px solid #95a2bb;
-  object-fit: cover;
-}
-
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid #55ba53;
-}
-
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-  background: #55ba53 !important;
-}
 
 /*Team section styling*/
-
-/* #teams h3 {
-  color: #0a2940;
-  font-size: 14px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
-
-#teams h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0a2940;
-  margin-bottom: 20px;
-}
-
-#teams h2 span {
-  font-weight: 500;
-}
-
-#teams p {
-  color: #0a2940;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#teams .wrapper .card-items {
-  display: flex;
-  justify-content: space-evenly;
-  overflow-x: auto; /* Allow horizontal scrolling if needed 
-}
-
-#teams .wrapper .card {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  background: #f6f6f6;
-  border-radius: 5px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
-  overflow: hidden;
-  width: 280px;
-  z-index: 1;
-  transition: all 0.5s ease;
-}
-
-#teams .wrapper .card:hover{
-  background: whitesmoke;
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
-#teams .wrapper .card .card-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-
-
-#teams .wrapper .card .card-header img {
-  margin-top: 35px;
-  width: 150px; 
-  height: 150px; 
-  object-fit: cover; 
-  border-radius: 50%; 
-}
-
-#teams .wrapper .card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  min-height: 200px;
-}
-
-#teams .wrapper .card .card-body h3{
-  font-size: 16px;
-  color: #95a2bb;
-  padding-top: 30px;
-  margin-top: 0; 
-}
-
-#teams .wrapper .card .card-body h4{
-  font-size: 14px;
-  font-weight: 600;
-  color: #0a2940;
-  margin-top: 0px;
-}
-
-#teams .wrapper .card .card-body ul{
-  display: flex;
-  list-style: none;
-  padding-top: 20px; 
-}
-
-#teams .wrapper .card .card-body ul li i{
-  padding: 5px;
-  margin: 0 7px;
-  border: 1px solid #95a2bb;
-  border-radius: 50%;
-  background: #0a2940;
-  color: #55BA53;
-}
-
-#teams .wrapper .card .card-body ul li i:hover{
-  background: #55BA53;
-  color: #0a2940;
-} */
 #teams .wrapper .card {
   margin: 10px;
   background: #f6f6f6;
@@ -526,6 +366,7 @@
 #teams .wrapper .card .card-header img {
   width: 93%;
   height: 279px;
+  border-radius: 7px;
   /* object-fit: cover; */
 }
 
@@ -551,23 +392,6 @@
   margin: 0;
 }
 
-.social-icons{
-  padding-right: 4%;
-}
-.social-icons li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.social-icons li a {
-  color: #707070;
-}
-
-.social-icons li a:hover {
-  color: #0a2940;
-}
-
-/**/
 
 /* Reset CSS */
 .services-header {
@@ -624,78 +448,36 @@
   letter-spacing: 1px;
 }
 
-/* Form styles */
-/* .form-container {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #555555;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus {
-  outline: none;
-  border-color: #1a1b1e;
-}
-
-button[type="submit"] {
-  background-color: #0a2940;
-  color: #ffffff;
-  border: none;
-  width: 100%;
-  padding: 14px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-button[type="submit"]:hover {
-  background-color: #536daf;
-} */
-
 .form-container {
-  max-width: 400px;
+  max-width:500px;
   margin: 0 auto;
+  /* margin-right: 100px; */
 }
 
 .form-group {
   margin-bottom: 10px;
 }
 
+.interest-form{
+  width: 120%;
+}
+
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="number"], 
+textarea{
   width: 100%;
   padding: 14px;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   color: #555555;
-}
-.interest-form{
-  width: 114%;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="tel"]:focus {
+input[type="number"]:focus, 
+textarea:focus {
   outline: none;
   border-color: #1a1b1e;
 }
@@ -721,6 +503,7 @@ button[type="submit"]:hover {
 /* Contact info styles */
 .contact-info {
   max-width: 500px;
+  /* margin-left: 100px; */
   margin: 0 auto;
 }
 
@@ -782,7 +565,6 @@ tr:hover {
 td {
   color: #1a1b1e; /* Text color for table cells */
 }
-
 /**/
 
 /* Reset CSS */
@@ -827,20 +609,75 @@ td {
   max-width: 100%; /* Ensure the logo stays within its container */
 }
 
-/* Contact info styles */
+/*
 .contact-info p {
   font-size: 14px;
   margin-bottom: 5px;
-  color: #fff; /* Adjust font size as needed */
-  /* Reduce bottom margin */
+  color: #fff; 
+  
 }
 
-/* Copyright text styles */
+*/
 .copyright {
-  font-size: 12px; /* Adjust font size as needed */
+  font-size: 14px; 
   text-align: center;
-  margin-top: 50px; /* Adjust margin as needed */
+  margin-top: 50px; 
   height: 70px;
   width: 100%;
   background-color: #aba3a3;
 }
+
+
+/* Contact info styles */
+.contact-information {
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact-information p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.contact-information p i {
+  margin-right: 10px;
+  font-size: 20px;
+  color:#002a53;
+}
+
+/* Adjust icon size and margin */
+.bx {
+  font-size: 24px; /* Adjust icon size as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+/* Footer content styles */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align vertically centered */
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Left content styles */
+.left-content {
+  width: 50%;
+}
+
+/* Right content styles */
+.right-content {
+  width: 50%;
+}
+
+/* Logo styles */
+.custom-logo {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px; /* Adding rounded corners to the logo */
+}
+
+
+

@@ -14,9 +14,7 @@
   <body>
     <div class="showcase">
       <!--Navbar below section-->
-
       <div class="navbar-below">
-        
         <img
           width="180"
           height="70"
@@ -25,6 +23,7 @@
           alt="Scalar Financial Services"
           itemprop="logo"
           decoding="async"
+          loading="lazy"
           srcset="
             https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1.png        190w,
             https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1-100x39.png 100w,
@@ -35,7 +34,6 @@
         <ul class="menu-right">
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
           <li><a href="#">Teams</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
@@ -48,7 +46,6 @@
           <label for="search-box" class="bx bx-search bx-sm"></label>
         </div>
       </div>
-
       <!--show case content section!>-->
       <div class="showcase-content">
         <h1>SCALAR FINANCIAL <br />SERVICES</h1>
@@ -68,32 +65,28 @@
             <i class="bx bxs-badge-dollar bx-lg"></i>
             <h3>Income Tax e-Filing</h3>
             <p>
-              Income tax e-filing: Convenient, secure, efficient financial
-              website service.
+              Income tax e-filing: Convenient, secure, efficient financial service.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-building-house bx-lg"></i>
             <h3>Sales Tax</h3>
             <p>
-              Sales tax e-filing: Streamlined, reliable, user-friendly financial
-              website assistance.
+              Sales tax e-filing: Streamlined, reliable, user-friendly financial assistance.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-credit-card-front bx-lg"></i>
             <h3>Payroll</h3>
             <p>
-              Payroll e-filing: Simplified, efficient, secure financial website
-              payroll management.
+              Payroll e-filing: Simplified, efficient, secure financial payroll management.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-plane-alt bx-lg"></i>
             <h3>Business Formation</h3>
             <p>
-              Business formation: Streamlined process on our financial website
-              for entrepreneurs.
+              Business formation: Forming & registering LLC, S Corporation and C Corporation
             </p>
           </div>
         </div>
@@ -141,14 +134,12 @@
             </div>
           </div>
         </div>
-      </div>
-      
+      </div>   
     <section id="teams" class="teams bg-light py-3">
       <h3 class="text-center">We are there for you</h3>
       <h2 class="text-center">
         Meet our <span class="text-secondary">Professional Expert</span>
       </h2>
-
       <div class="wrapper">
         <div class="card-items">
           <div class="card">
@@ -164,20 +155,6 @@
               <div class="card-footer">
                 <div class="details">
                   <h3>Shobin Mathew EA</h3>
-                  <ul class="social-icons">
-                    <li>
-                      <a href="#"><i class="bx bxl-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bx bxl-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -185,14 +162,13 @@
               <img
                 src="./images/Picture1.png"
                 alt="Profile Image"
+                loading="lazy"
               />
-             
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <div class="services-header">
       <h2>Interested in <span>Our services ?</span></h2>
     </div>
@@ -200,11 +176,12 @@
       <div class="column">
         <section id="interested" class="interested bg-light py-5">
           <div class="form-container">
-            <form action="#" method="POST" class="interest-form">
+            <form id="contact-form" onsubmit="sendEmail(event)" class="interest-form">
               <div class="form-group">
                 <input
                   type="text"
                   name="first_name"
+                  id="first_name"
                   placeholder="First Name"
                   required
                 />
@@ -213,23 +190,28 @@
                 <input
                   type="text"
                   name="last_name"
+                  id="last_name"
                   placeholder="Last Name"
                   required
                 />
               </div>
               <div class="form-group">
-                <input type="email" name="email" placeholder="Email" required />
+                <input type="email" name="email" id="email" placeholder="Email" required />
               </div>
               <div class="form-group">
-                <input type="tel" name="phone" placeholder="Phone" required />
+                <input type="number" name="phone" id="phone" placeholder="Phone" required />
               </div>
               <div class="form-group">
                 <input
                   type="text"
                   name="company"
+                  id="company"
                   placeholder="Company"
                   required
                 />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" rows="3" cols="50">Message here...</textarea>
               </div>
               <div class="form-group">
                 <button type="submit">Submit</button>
@@ -245,12 +227,12 @@
             <tr>
               <td><i class="bx bx-building"></i></td>
               <td><strong>Office:</strong></td>
-              <td>(408)-331-2400</td>
+              <td>+1 (408)-331-2400 (W)</td>
             </tr>
             <tr>
               <td><i class="bx bx-mobile"></i></td>
               <td><strong>Cell:</strong></td>
-              <td>(650)-833-8185</td>
+              <td>+1 (650)-833-8185 (C)</td>
             </tr>
             <tr>
               <td><i class="bx bx-envelope"></i></td>
@@ -260,7 +242,7 @@
             <tr>
               <td><i class="bx bx-map"></i></td>
               <td><strong>Address:</strong></td>
-              <td>3872 EI Camino Real,Palo Alto,CA 94306</td>
+              <td>3872 EI Camino Real, Palo Alto, CA 94306</td>
             </tr>
             <tr>
               <td><i class="bx bx-dollar"></i></td>
@@ -271,7 +253,6 @@
         </section>
       </div>
     </div>
-
     <footer class="footer">
       <div class="footer-content">
         <div class="left-content">
@@ -283,6 +264,7 @@
             alt="Scalar Financial Services"
             itemprop="logo"
             decoding="async"
+            loading="lazy"
             srcset="
               https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1.png        190w,
               https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1-100x39.png 100w,
@@ -299,11 +281,12 @@
           <div class="contact-now">
             <h2 class="text-left">Contact Now</h2>
           </div>
-          <div class="contact-info">
-            <p><i class="bx bx-envelope"></i> info@scalarfs.com</p>
-            <p><i class="bx bx-phone"></i> +408 331 2400</p>
+          <div class="contact-information">
+            <p><i class="bx bx-envelope"></i> info@scalarfs.com | scalarfs@gmail.com</p>
+            <p><i class="bx bx-phone"></i>(O) +1 408 331 2400 (W)</p>
+            <p><i class="bx bx-mobile"></i>(C) +1 (650)-833-8185 (C)</p>
             <p>
-              <i class="bx bx-map"></i> 3872 El Camino Real, Palo Alto, VA 94306
+              <i class="bx bx-map"></i> 3872 El Camino Real, Palo Alto, CA 94306
             </p>
           </div>
         </div>
@@ -315,18 +298,11 @@
         <p>© 2024 Scalar Financial Services</p>
       </div>
     </footer>
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
 
-<!-- <img width="190" height="74" src="https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1.png" class="custom-logo" alt="Scalar Financial Services" itemprop="logo" decoding="async" srcset="https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1.png 190w, https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1-100x39.png 100w, https://www.scalarfs.com/wp-content/uploads/2023/01/scalarfs-logo-1-150x58.png 150w" sizes="(max-width: 190px) 100vw, 190px"> -->
-
-<!-- <img loading="lazy" decoding="async" width="186" height="300" src="https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-186x300.jpeg" class="attachment-medium size-medium wp-image-184" alt="" srcset="https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-186x300.jpeg 186w, https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-100x162.jpeg 100w, https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-150x242.jpeg 150w, https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-200x323.jpeg 200w, https://www.scalarfs.com/wp-content/uploads/2023/02/shobin-300x485.jpeg 300w, https://www.scalarfs.com/wp-content/uploads/2023/02/shobin.jpeg 406w" sizes="(max-width: 186px) 100vw, 186px"> -->
