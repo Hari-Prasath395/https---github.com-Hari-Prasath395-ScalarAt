@@ -12,9 +12,9 @@
     />
   </head>
   <body>
-    <div class="showcase">
+    <div  class="showcase">
       <!--Navbar below section-->
-      <div class="navbar-below">
+      <div id="header" class="navbar-below">
         <img
           width="180"
           height="70"
@@ -32,11 +32,10 @@
           sizes="(max-width: 190px) 100vw, 190px"
         />
         <ul class="menu-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a id="home-link" href="#">Home</a></li>
+          <li><a onclick="scrollToTopic('services')" href="#">Services</a></li>
           <li><a href="#">Teams</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a onclick="scrollToTopic('topic2')" href="#">Contact</a></li>
           <li>
             <a href="#"><i class="bx bx-search bx-sm" id="search-btn"></i></a>
           </li>
@@ -53,8 +52,8 @@
           Partnered with Haspit to securely share your sensitive <br />files
           with Blockchain technology
         </p>
-        <a href="#" class="btn btn-left">Explore more</a>
-        <a href="#" class="btn btn-left">Get in Touch</a>
+        <button onclick="scrollToTopic('topic1')" class="btn btn-left">Explore more</button>
+        <button onclick="scrollToTopic('topic2')" class="btn btn-left">Get in Touch</button>
       </div>
     </div>
     <!--Services section-->
@@ -96,17 +95,17 @@
               src="./images/business-people-working-with-ipad-high-angle.jpg"
             />
           </div>
-          <div class="goal-text">
+          <div id="topic1" class="goal-text">
             <a href="#">Our Process</a>
-            <h2>Investment Banking & Capital Market</h2>
+            <h2 class="text-center">Tax Filing and Financial Advice</h2>
             <div class="contents">
               <div class="content p-4">
                 <i class="bx bx-check bx-sm"></i>
               </div>
               <div class="content p-4">
-                <h3>Investment Management</h3>
+               
                 <p>
-                    Our Investment Management: Expert oversight of diverse assets,<br> tailored strategies for optimal returns
+                  Please text or call me to discuss your financial needs.
                 </p>
               </div>
             </div>
@@ -115,9 +114,9 @@
                 <i class="bx bx-check bx-sm"></i>
               </div>
               <div class="content p-4">
-                <h3>Private Credit Cards</h3>
+                <!-- <h3>Private Credit Cards</h3> -->
                 <p>
-                    Private Credit Cards: Tailored solutions, secure transactions, and <br> personalized services for financial empowerment.
+                  Provide us with your email and we will send a file request link to <br> securely upload your previous tax return and current tax documents<br> through Haspit.
                 </p>
               </div>
             </div>
@@ -126,9 +125,18 @@
                 <i class="bx bx-check bx-sm"></i>
               </div>
               <div class="content p-4">
-                <h3>Business Multi Solutions</h3>
                 <p>
-                    Business Multi Solutions: Comprehensive strategies, innovative <br> approaches, and scalable solutions for diverse business needs.
+                  Haspit is a file transfer portal secured through private blockchain <br>technology.
+                </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content p-4">
+                <i class="bx bx-check bx-sm"></i>
+              </div>
+              <div class="content p-4">
+                <p>
+                  We will then work to get you the best return!
                 </p>
               </div>
             </div>
@@ -160,7 +168,7 @@
             </div>
             <div class="card-header">
               <img
-                src="./images/Picture1.png"
+                src="./images/IMG_1063.jpeg"
                 alt="Profile Image"
                 loading="lazy"
               />
@@ -169,8 +177,8 @@
         </div>
       </div>
     </section>
-    <div class="services-header">
-      <h2>Interested in <span>Our services ?</span></h2>
+    <div id="topic2" class="services-header">
+      <h2>Interested in <span>OUR SERVICES ?</span></h2>
     </div>
     <div class="row">
       <div class="column">
@@ -252,7 +260,7 @@
           </table>
         </section>
       </div>
-    </div>
+      </div>
     <footer class="footer">
       <div class="footer-content">
         <div class="left-content">
