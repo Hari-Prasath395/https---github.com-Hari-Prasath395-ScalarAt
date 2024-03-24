@@ -960,9 +960,175 @@ button[type="submit"]:hover {
 /**********************************Media Queries***************************************/
 
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
+  .showcase .navbar-below {
+    padding: 0 20px; 
+  }
+
+  .showcase .navbar-below .menu-right {
+    display: none;
+  }
+
+  .showcase .navbar-below .menu-right.active {
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .showcase .navbar-below .menu-right.active li {
+    text-align: center;
+  }
+
+  .showcase .navbar-below .menu-right.active a {
+    padding: 15px 0;
+    display: block;
+  }
+}
+
+
+#hamburger-menu {
+  display: none; 
+}
+
+@media screen and (max-width:768px) {
+  #hamburger-menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+
+  #hamburger-menu div {
+    width: 100%;
+    height: 3px;
+    background-color: #1a1b1e;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .showcase .showcase-content {
+    margin-top: 60px;
+    padding: 50px 20px; 
+    text-align: center; 
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 36px; 
+  }
+
+  .showcase .showcase-content p {
+    font-size: 16px;
+  }
+
+  .showcase .showcase-content .btn-left,
+  .showcase .showcase-content .btn-right {
+    padding: 10px 22px; 
+    font-size: 12px; 
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .services-content {
+    flex-direction: column; 
+  }
+
+  .service-form,
+  .contact-info {
+    width: 100%; 
+    margin: 0; 
+  }
+
+  .service-form {
+    margin-bottom: 20px; 
+  }
+
+  .cardservice {
+    margin-bottom: 20px; 
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .footer-content {
+    flex-direction: column; 
+  }
+
+  .footer .footer-content .left-content p{
+    font-size: 14px;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%; 
+
+  .right-content {
+    text-align: left; 
+    margin-top: 20px; 
+  }
+}
+}
+
+
+@media only screen and (max-width:768px) {
+  #teams .wrapper .card {
+    flex-direction: column; 
+    width: calc(100% - 20px); 
+    margin: 10px auto; 
+  }
+
+  #teams .wrapper .card .card-header,
+  #teams .wrapper .card .card-body {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  #teams .wrapper .card .card-header img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+  }
+
+  #teams .wrapper .card .card-footer {
+    padding: 8px 0; 
+  }
+}
+
+@media screen and (max-width:768px) {
+  #services .items .item {
+    flex-basis: calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+  }
+
+  #services .items .item p{
+    text-align: left;
+  }
+  
+  @media screen and (max-width:480px) {
+    #services .items .item {
+      flex-basis: calc(100% - 20px); 
+      max-width: calc(100% - 20px); 
+    }
+  }
+} */
+
+/* Adjusting navbar and showcase content for smaller screens */
+@media screen and (max-width: 1024px) {
   .showcase .navbar-below {
     padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  /* Hamburger Menu Icon Styles */
+  #hamburger-menu {
+    display: none; /* Hide by default */
   }
 
   .showcase .navbar-below .menu-right {
@@ -992,11 +1158,7 @@ button[type="submit"]:hover {
 }
 
 /* Hamburger Menu Icon Styles */
-#hamburger-menu {
-  display: none; /* Hide by default */
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #hamburger-menu {
     display: block; /* Display for mobile and tablet view */
     width: 30px;
@@ -1015,7 +1177,8 @@ button[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width:768px) {
+/* Adjusting showcase content for smaller screens */
+@media screen and (max-width: 768px) {
   .showcase .showcase-content {
     margin-top: 60px;
     padding: 50px 20px; /* Adjust padding for smaller screens */
@@ -1034,88 +1197,5 @@ button[type="submit"]:hover {
   .showcase .showcase-content .btn-right {
     padding: 10px 22px; /* Adjust button padding */
     font-size: 12px; /* Decrease font size for buttons */
-  }
-}
-
-@media only screen and (max-width:768px) {
-  .services-content {
-    flex-direction: column; /* Change to column layout for smaller screens */
-  }
-
-  .service-form,
-  .contact-info {
-    width: 100%; /* Make both sections take up full width */
-    margin: 0; /* Remove margins */
-  }
-
-  .service-form {
-    margin-bottom: 20px; /* Add some space between sections */
-  }
-
-  .cardservice {
-    margin-bottom: 20px; /* Add some space between contact details */
-  }
-}
-
-@media only screen and (max-width:768px) {
-  .footer-content {
-    flex-direction: column; 
-  }
-
-  .footer .footer-content .left-content p{
-    font-size: 14px;
-  }
-
-  .left-content,
-  .right-content {
-    width: 100%; 
-
-  .right-content {
-    text-align: left; 
-    margin-top: 20px; 
-  }
-}
-}
-
-
-@media only screen and (max-width:768px) {
-  #teams .wrapper .card {
-    flex-direction: column; /* Change to column layout for smaller screens */
-    width: calc(100% - 20px); /* Adjust width */
-    margin: 10px auto; /* Center cards horizontally */
-  }
-
-  #teams .wrapper .card .card-header,
-  #teams .wrapper .card .card-body {
-    width: 100%; /* Make header and body take up full width */
-    padding: 10px; /* Adjust padding */
-  }
-
-  #teams .wrapper .card .card-header img {
-    width: 100%; /* Adjust image width */
-    height: auto; /* Allow image height to adjust automatically */
-    border-radius: 5px; /* Adjust border-radius */
-  }
-
-  #teams .wrapper .card .card-footer {
-    padding: 8px 0; /* Adjust padding */
-  }
-}
-
-@media screen and (max-width:768px) {
-  #services .items .item {
-    flex-basis: calc(50% - 20px); /* Two items per row */
-    max-width: calc(50% - 20px); /* Ensure maximum width */
-  }
-
-  #services .items .item p{
-    text-align: left;
-  }
-  
-  @media screen and (max-width:480px) {
-    #services .items .item {
-      flex-basis: calc(100% - 20px); /* One item per row */
-      max-width: calc(100% - 20px); /* Ensure maximum width */
-    }
   }
 }
