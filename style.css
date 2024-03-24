@@ -233,7 +233,7 @@
 #services .items {
   display: flex;
   flex-wrap: wrap; 
-  padding-bottom: 40px;
+  margin-top: 25px;
 }
 
 #services .items .item {
@@ -453,7 +453,7 @@
 /******************************Expert***************************************************/
 
 /*Team section styling*/
-#teams .wrapper .card {
+#teams .wrappers .cardd {
   margin: 10px;
   background: #f6f6f6;
   border-radius: 5px;
@@ -466,35 +466,35 @@
   align-items: center; /* Center vertically */
 }
 
-#teams .wrapper .card .card-header {
+#teams .wrappers .cardd .cardd-header {
   width: 30%;
   padding: 20px;
 }
 
-#teams .wrapper .card .card-header img {
+#teams .wrappers .cardd .cardd-header img {
   width: 93%;
   height: 279px;
   border-radius: 7px;
   /* object-fit: cover; */
 }
 
-#teams .wrapper .card .card-body {
+#teams .wrappers .cardd .cardd-body {
   width: 70%;
   padding: 20px;
 }
 
-#teams .wrapper .card .card-footer {
+#teams .wrappers .cardd .cardd-footer {
   padding: 12px 0px;
   background-color: #f6f6f6;
 }
 
-#teams .wrapper .card .card-footer .details {
+#teams .wrappers .cardd .cardd-footer .details {
   display: flex;
   justify-content: space-between; /* Align items to right side */
   align-items: center;
 }
 
-#teams .wrapper .card .card-footer p {
+#teams .wrappers .cardd .cardd-footer p {
   color: #707070;
   font-size: 12px;
   margin: 0;
@@ -774,7 +774,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .services-content {
     flex-direction: column;
     margin-top: 20px;
@@ -793,7 +793,7 @@ button[type="submit"]:hover {
   .cardservice {
     margin-bottom: 20px;
   }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .footer-content {
@@ -815,43 +815,52 @@ button[type="submit"]:hover {
   }
 }
 @media only screen and (max-width: 768px) {
-  #teams .wrapper .card {
+  #teams .wrappers .cardd {
     flex-direction: column;
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
     margin: 10px auto;
   }
 
-  #teams .wrapper .card .card-header,
-  #teams .wrapper .card .card-body {
+  #teams .wrappers .cardd .cardd-header,
+  #teams .wrappers .cardd .cardd-body {
     width: 100%;
     padding: 10px;
   }
 
-  #teams .wrapper .card .card-header img {
+  #teams .wrappers .cardd .cardd-header img {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
 
-  #teams .wrapper .card .card-footer {
+  #teams .wrappers .cards .cardd-footer {
     padding: 8px 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  #services .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    margin-top: 20px; /* Added margin-top for spacing */
+  }
+
   #services .items .item {
-    flex-basis: calc(50% - 20px);
-    max-width: calc(50% - 20px);
+    flex: 0 0 calc(50%); /* Adjust flex-basis for 2 items per row */
+    max-width: calc(50%); /* Adjust max-width for 2 items per row */
+    margin: 10px; /* Adjust margin for spacing */
   }
 
   #services .items .item p {
-    text-align: left;
-  }
-
-  @media screen and (max-width: 480px) {
-    #services .items .item {
-      flex-basis: calc(100% - 20px);
-      max-width: calc(100% - 20px);
-    }
+    text-align: center; /* Center the text */
   }
 }
+
+@media screen and (max-width: 480px) {
+  #services .items .item {
+    flex-basis: calc(160%); /* Adjust flex-basis for 1 item per row */
+    max-width: calc(160%); /* Adjust max-width for 1 item per row */
+  }
+}
+
