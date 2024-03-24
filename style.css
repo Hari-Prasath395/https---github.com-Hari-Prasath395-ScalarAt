@@ -960,7 +960,7 @@ button[type="submit"]:hover {
 /**********************************Media Queries***************************************/
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1024px) {
   .showcase .navbar-below {
     padding: 0 20px; /* Adjust padding for smaller screens */
   }
@@ -996,7 +996,7 @@ button[type="submit"]:hover {
   display: none; /* Hide by default */
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
   #hamburger-menu {
     display: block; /* Display for mobile and tablet view */
     width: 30px;
@@ -1015,7 +1015,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
   .showcase .showcase-content {
     margin-top: 60px;
     padding: 50px 20px; /* Adjust padding for smaller screens */
@@ -1057,7 +1057,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
   .footer-content {
     flex-direction: column; 
   }
@@ -1078,7 +1078,7 @@ button[type="submit"]:hover {
 }
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:768px) {
   #teams .wrapper .card {
     flex-direction: column; /* Change to column layout for smaller screens */
     width: calc(100% - 20px); /* Adjust width */
@@ -1102,7 +1102,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
   #services .items .item {
     flex-basis: calc(50% - 20px); /* Two items per row */
     max-width: calc(50% - 20px); /* Ensure maximum width */
