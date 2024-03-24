@@ -276,86 +276,9 @@
 
 /********************************Our Process*******************************************/
 
-
-/* #goal {
-  display: flex;
-  padding-top: 20px;
-}
-#goal div {
-  flex: 1;
-}
-
-#goal .goal-img {
-  display: inline-block;
-  position: relative;
-  width: 600px;
-  height: 380px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-#goal .goal-img img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-#goal .goal-text {
-  margin: 0 40px;
-}
-
-#goal .goal-text a {
-  color: #f4f4f4;
-  background:linear-gradient(#203772,#2b4884);
-  text-decoration: none;
-  font-size: bold;
-  position: relative;
-  margin-left: 200px;
-  border: 1px solid #536daf;
-  border-radius: 25px;
-  padding: 8px 10px;
-  cursor:none;
-  transition: 0.5s ease;
-}
-
-#goal .goal-text h2 {
-  margin: 20px 0;
-  color: #0a2940;
-}
-#goal .goal-text .contents {
-  display: flex;
-}
-
-#goal .goal-text .contents .content {
-  flex: none;
-  padding: 10px;
-}
-
-#goal .goal-text .contents .content h3 {
-  font-size: 16px;
-  padding-bottom: 5px;
-  color: #4763a8;
-}
-
-#goal .goal-text .contents .content p {
-  color: #1a1b1e; 
-  text-align: justify;
-  
-}
-
-#goal .goal-text .contents .content i {
-  color: #ffffff;
-  padding: 3px;
-  background: #0a2940;
-  align-self: flex-start;
-  border-radius: 5px;
-  margin-right: 5px;
-}   */
-
 .bg-light {
   background-color: #f8f9fa;
-  padding: 0 30px 30px 30px; /* Set padding for left, right, and bottom sides */
+  padding: 0 30px 30px 30px; 
 }
 
 
@@ -420,34 +343,56 @@
   padding: 3px;
   background: #0a2940;
   border-radius: 5px;
-  margin-right: 10px;
+  /* margin-right: px; */
 }
 
 .content p {
   color: #1a1b1e;
   text-align: justify;
   margin: 0;
-}
+} 
+
+
+
+
 
 @media screen and (max-width: 768px) {
+  .bx-check {
+    padding:0.5px; 
+  }
   #goal {
     flex-direction: column;
+    align-items: center; /* Center items horizontally */
     text-align: center;
   }
+
+  .goal-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+  .goal-img img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    max-height: 350px;
+    height: auto; 
+  }
+  
+
+  .goal-text {
+    max-width: 100%;
+  }
+
   .goal-text a {
     margin-top: 15px;
   }
 
-  
-.content p {
-  margin-top: 15px; 
-}
-  .goal-img,
-  .goal-text {
-    max-width: 100%;
-    /* margin-right: 0; */
+  .content p {
+    margin-top: 15px;
   }
-}  
+}
+
 
 
 /******************************Expert***************************************************/
@@ -754,7 +699,7 @@ button[type="submit"]:hover {
 }
 @media screen and (max-width: 768px) {
   .showcase .showcase-content {
-    margin-top: 100px;
+    margin-top: 180px;
     padding: 50px 20px;
     text-align: center;
   }
@@ -765,6 +710,7 @@ button[type="submit"]:hover {
 
   .showcase .showcase-content p {
     font-size: 16px;
+    display: inline;
   }
 
   .showcase .showcase-content .btn-left,
@@ -773,27 +719,6 @@ button[type="submit"]:hover {
     font-size: 12px;
   }
 }
-
-/* @media only screen and (max-width: 768px) {
-  .services-content {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .service-form,
-  .contact-info {
-    width: 100%;
-    margin: 0;
-  }
-
-  .service-form {
-    margin-bottom: 20px;
-  }
-
-  .cardservice {
-    margin-bottom: 20px;
-  }
-} */
 
 @media only screen and (max-width: 768px) {
   .footer-content {
