@@ -960,7 +960,7 @@ button[type="submit"]:hover {
 /**********************************Media Queries***************************************/
 
 
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
   .showcase .navbar-below {
     padding: 0 20px; 
   }
@@ -996,7 +996,7 @@ button[type="submit"]:hover {
   display: none; 
 }
 
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
   #hamburger-menu {
     display: block;
     width: 30px;
@@ -1013,37 +1013,7 @@ button[type="submit"]:hover {
     height: 3px;
     background-color: #1a1b1e;
   }
-} */
-
-/* Hamburger Menu Icon Styles */
-@media screen and (max-width: 768px) {
-  #hamburger-menu {
-    display: block; /* Display for mobile and tablet view */
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    margin-right: 10px; /* Adjust margin as needed */
-  }
-
-  #hamburger-menu div {
-    width: 30px;
-    height: 3px;
-    background-color: #1a1b1e;
-    margin: 5px 0; /* Adjust spacing between lines */
-  }
-
-  /* Hide menu items by default on mobile */
-  .menu-right {
-    display: none;
-  }
-
-  /* Show menu items when hamburger menu is clicked */
-  #hamburger-menu.clicked + .menu-right {
-    display: block;
-  }
-}
-
-
+} 
 @media screen and (max-width:768px) {
   .showcase .showcase-content {
     margin-top: 60px;
@@ -1148,4 +1118,4 @@ button[type="submit"]:hover {
     }
   }
 } 
-
+ */
