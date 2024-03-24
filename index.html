@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div  class="showcase">
+    <div class="showcase">
       <!--Navbar below section-->
       <div id="header" class="navbar-below">
         <img
@@ -31,6 +31,11 @@
           "
           sizes="(max-width: 190px) 100vw, 190px"
         />
+        <div id="hamburger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul class="menu-right">
           <li><a id="home-link" href="#">Home</a></li>
           <li><a onclick="scrollToTopic('services')" href="#">Services</a></li>
@@ -40,6 +45,7 @@
             <a href="#"><i class="bx bx-search bx-sm" id="search-btn"></i></a>
           </li>
         </ul>
+
         <div class="search-form">
           <input type="search" name="search-box" placeholder="search here.." />
           <label for="search-box" class="bx bx-search bx-sm"></label>
@@ -52,8 +58,12 @@
           Partnered with Haspit to securely share your sensitive <br />files
           with Blockchain technology
         </p>
-        <button onclick="scrollToTopic('topic1')" class="btn btn-left">Explore more</button>
-        <button onclick="scrollToTopic('topic2')" class="btn btn-left">Get in Touch</button>
+        <button onclick="scrollToTopic('topic1')" class="btn btn-left">
+          Explore more
+        </button>
+        <button onclick="scrollToTopic('topic2')" class="btn btn-left">
+          Get in Touch
+        </button>
       </div>
     </div>
     <!--Services section-->
@@ -64,32 +74,40 @@
             <i class="bx bxs-badge-dollar bx-lg"></i>
             <h3>Income Tax e-Filing</h3>
             <p>
-              Income tax e-filing: Convenient, secure, efficient financial service.
+              Income tax e-filing: Convenient, secure, efficient financial
+              service.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-building-house bx-lg"></i>
             <h3>Sales Tax</h3>
             <p>
-              Sales tax e-filing: Streamlined, reliable, user-friendly financial assistance.
+              Sales tax e-filing: Streamlined, reliable, user-friendly financial
+              assistance.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-credit-card-front bx-lg"></i>
             <h3>Payroll</h3>
             <p>
-              Payroll e-filing: Simplified, efficient, secure financial payroll management.
+              Payroll e-filing: Simplified, efficient, secure financial payroll
+              management.
             </p>
           </div>
           <div class="item">
             <i class="bx bxs-plane-alt bx-lg"></i>
             <h3>Business Formation</h3>
             <p>
-              Business formation: Forming & registering LLC, S Corporation and C Corporation
+              Business formation: Forming & registering LLC, S Corporation and C
+              Corporation
             </p>
           </div>
         </div>
-        <div id="goal" class="goal">
+      </div>
+    </section>
+    
+    <!-- <section class="bg-light">
+      <div id="goal">
           <div class="goal-img">
             <img
               src="./images/business-people-working-with-ipad-high-angle.jpg"
@@ -103,10 +121,7 @@
                 <i class="bx bx-check bx-sm"></i>
               </div>
               <div class="content p-4">
-               
-                <p>
-                  Please text or call me to discuss your financial needs.
-                </p>
+                <p>Please text or call me to discuss your financial needs.</p>
               </div>
             </div>
             <div class="contents">
@@ -114,19 +129,13 @@
                 <i class="bx bx-check bx-sm"></i>
               </div>
               <div class="content p-4">
-                <!-- <h3>Private Credit Cards</h3> -->
+              
                 <p>
-                  Provide us with your email and we will send a file request link to <br> securely upload your previous tax return and current tax documents<br> through Haspit.
-                </p>
-              </div>
-            </div>
-            <div class="contents">
-              <div class="content p-4">
-                <i class="bx bx-check bx-sm"></i>
-              </div>
-              <div class="content p-4">
-                <p>
-                  Haspit is a file transfer portal secured through private blockchain <br>technology.
+                  Provide us with your email and we will send a file request
+                  link to <br />
+                  securely upload your previous tax return and current tax
+                  documents<br />
+                  through Haspit.
                 </p>
               </div>
             </div>
@@ -136,13 +145,66 @@
               </div>
               <div class="content p-4">
                 <p>
-                  We will then work to get you the best return!
+                  Haspit is a file transfer portal secured through private
+                  blockchain <br />technology.
                 </p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content p-4">
+                <i class="bx bx-check bx-sm"></i>
+              </div>
+              <div class="content p-4">
+                <p>We will then work to get you the best return!</p>
               </div>
             </div>
           </div>
         </div>
-      </div>   
+      </section> -->
+
+      <section class="bg-light">
+        <div id="goal">
+          <div class="goal-img">
+            <img src="./images/business-people-working-with-ipad-high-angle.jpg" alt="Business people working with iPad">
+          </div>
+          <div class="goal-text">
+            <a href="#">Our Process</a>
+            <h2>Tax Filing and Financial Advice</h2>
+            <div class="contents">
+              <div class="content">
+                <i class="bx bx-check bx-sm"></i>
+                <p>Please text or call me to discuss your financial needs.</p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content">
+                <i class="bx bx-check bx-sm"></i>
+                <p>Provide us with your email and we will send a file request link to securely upload your previous tax return and current tax documents through Haspit.</p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content">
+                <i class="bx bx-check bx-sm"></i>
+                <p>Haspit is a file transfer portal secured through private blockchain technology.</p>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="content">
+                <i class="bx bx-check bx-sm"></i>
+                <p>We will then work to get you the best return!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+        
+        
+        
+        
+        
+     
     <section id="teams" class="teams bg-light py-3">
       <h3 class="text-center">We are there for you</h3>
       <h2 class="text-center">
@@ -177,90 +239,77 @@
         </div>
       </div>
     </section>
-    <div id="topic2" class="services-header">
-      <h2>Interested in <span>OUR SERVICES ?</span></h2>
-    </div>
-    <div class="row">
-      <div class="column">
-        <section id="interested" class="interested bg-light py-5">
-          <div class="form-container">
-            <form id="contact-form" onsubmit="sendEmail(event)" class="interest-form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="first_name"
-                  id="first_name"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" id="email" placeholder="Email" required />
-              </div>
-              <div class="form-group">
-                <input type="number" name="phone" id="phone" placeholder="Phone" required />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  placeholder="Company"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea id="message" name="message" rows="3" cols="50">Message here...</textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
+    <section id="topic2"   class="services bg-light">
+      <div class="services-header">
+        <h2>Interested in <span>OUR SERVICES ?</span></h2>
+      </div>
+      <div class="main-card">
+      <div class="services-content">
+        <div class="service-form">
+          <!-- <h3>Interested</h3> -->
+          <form id="contact-form" onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <input type="text" name="first_name" id="first_name" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <input type="text" name="last_name" id="last_name" placeholder="Last Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="number" name="phone" id="phone" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input type="text" name="company" id="company" placeholder="Company" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="3" cols="50" placeholder="Message here..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <div class="cardservice">
+            <i class="bx bx-building"></i>
+            <div>
+              <strong>Office:</strong>
+              <p>+1 (408)-331-2400 (W)</p>
+            </div>
           </div>
-        </section>
-      </div>
-      <div class="column">
-        <section id="contact" class="contact-info py-5">
-          <h3 class="text-left">Contact-Details</h3>
-          <table>
-            <tr>
-              <td><i class="bx bx-building"></i></td>
-              <td><strong>Office:</strong></td>
-              <td>+1 (408)-331-2400 (W)</td>
-            </tr>
-            <tr>
-              <td><i class="bx bx-mobile"></i></td>
-              <td><strong>Cell:</strong></td>
-              <td>+1 (650)-833-8185 (C)</td>
-            </tr>
-            <tr>
-              <td><i class="bx bx-envelope"></i></td>
-              <td><strong>Email:</strong></td>
-              <td>scalarfs@gmail.com | info@scalarfs.com</td>
-            </tr>
-            <tr>
-              <td><i class="bx bx-map"></i></td>
-              <td><strong>Address:</strong></td>
-              <td>3872 EI Camino Real, Palo Alto, CA 94306</td>
-            </tr>
-            <tr>
-              <td><i class="bx bx-dollar"></i></td>
-              <td><strong>Pricing:</strong></td>
-              <td>Submit a form or Contact via Email, Mobile</td>
-            </tr>
-          </table>
-        </section>
-      </div>
-      </div>
+          <div class="cardservice">
+            <i class="bx bx-mobile"></i>
+            <div>
+              <strong>Cell:</strong>
+              <p>+1 (650)-833-8185 (C)</p>
+            </div>
+          </div>
+          <div class="cardservice">
+            <i class="bx bx-envelope"></i>
+            <div>
+              <strong>Email:</strong>
+              <p>scalarfs@gmail.com | info@scalarfs.com</p>
+            </div>
+          </div>
+          <div class="cardservice">
+            <i class="bx bx-map"></i>
+            <div>
+              <strong>Address:</strong>
+              <p>3872 EI Camino Real, Palo Alto, CA 94306</p>
+            </div>
+          </div>
+          <div class="cardservice">
+            <i class="bx bx-dollar"></i>
+            <div>
+              <strong>Pricing:</strong>
+              <p>Submit a form or Contact via Email, Mobile</p>
+            </div>
+          </div>
+        </div>
+    </section>
     <footer class="footer">
       <div class="footer-content">
         <div class="left-content">
@@ -290,7 +339,10 @@
             <h2 class="text-left">Contact Now</h2>
           </div>
           <div class="contact-information">
-            <p><i class="bx bx-envelope"></i> info@scalarfs.com | scalarfs@gmail.com</p>
+            <p>
+              <i class="bx bx-envelope"></i> info@scalarfs.com |
+              scalarfs@gmail.com
+            </p>
             <p><i class="bx bx-phone"></i>(O) +1 408 331 2400 (W)</p>
             <p><i class="bx bx-mobile"></i>(C) +1 (650)-833-8185 (C)</p>
             <p>
@@ -306,11 +358,14 @@
         <p>© 2024 Scalar Financial Services</p>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
-

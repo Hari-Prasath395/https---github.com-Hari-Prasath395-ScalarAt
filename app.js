@@ -101,3 +101,9 @@ document.getElementById('home-link').addEventListener('click', function(event) {
 });
 
 
+const hamburgerMenu = document.getElementById('hamburger-menu');
+    const menuRight = document.querySelector('.menu-right');
+
+    hamburgerMenu.addEventListener('click', function() {
+      menuRight.classList.toggle('active');
+    });
